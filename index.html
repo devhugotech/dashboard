@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para o gráfico fictício */
+        .chart {
+            display: flex;
+            align-items: flex-end;
+            height: 200px; /* Altura total do gráfico */
+            border-left: 2px solid #333; /* Linha da esquerda */
+            border-bottom: 2px solid #333; /* Linha da base */
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .bar {
+            width: 40px; /* Largura de cada barra */
+            margin: 0 10px; /* Espaçamento entre as barras */
+            background-color: #4CAF50; /* Cor da barra */
+            text-align: center; /* Centraliza o texto da barra */
+            color: white;
+            transition: background-color 0.3s; /* Efeito de transição */
+        }
+
+        .bar:hover {
+            background-color: #45a049; /* Cor da barra ao passar o mouse */
+        }
+
+        /* Exemplo de alturas para as barras do gráfico */
+        .bar1 { height: 120px; }
+        .bar2 { height: 180px; }
+        .bar3 { height: 80px; }
+        .bar4 { height: 150px; }
+    </style>
 </head>
 <body>
+    <!-- Cabeçalho Fixo -->
     <header>
         <nav>
             <ul class="nav-menu">
@@ -20,6 +52,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- Menu Lateral -->
     <aside>
         <ul class="sidebar-menu">
             <li><span class="icon">🏠</span><a href="#">Painel</a></li>
@@ -28,7 +62,21 @@
             <li><span class="icon">📧</span><a href="#">Mensagens</a></li>
         </ul>
     </aside>
+
+    <!-- Conteúdo Principal -->
     <main>
+        <!-- Seção de Gráficos -->
+        <section class="chart-section">
+            <h2>Gráfico de Desempenho</h2>
+            <div class="chart">
+                <div class="bar bar1">12</div>
+                <div class="bar bar2">19</div>
+                <div class="bar bar3">8</div>
+                <div class="bar bar4">15</div>
+            </div>
+        </section>
+
+        <!-- Cards de Estatísticas -->
         <section class="stats-cards">
             <div class="card">Card 1</div>
             <div class="card">Card 2</div>
@@ -36,6 +84,7 @@
             <div class="card">Card 4</div>
         </section>
         
+        <!-- Atividades Recentes -->
         <section class="recent-activities">
             <h2>Atividades Recentes</h2>
             <ul>
@@ -45,6 +94,8 @@
             </ul>
         </section>
     </main>
+
+    <!-- Rodapé -->
     <footer>
         <ul class="footer-links">
             <li><a href="#">Sobre</a></li>

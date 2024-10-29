@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Cabeçalho Fixo -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="badge">3</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Lateral -->
+    <aside>
+        <ul class="sidebar-menu">
+            <li><span class="icon">🏠</span><a href="#">Painel</a></li>
+            <li><span class="icon">📊</span><a href="#">Estatísticas</a></li>
+            <li><span class="icon">⚙️</span><a href="#">Configurações</a></li>
+            <li><span class="icon">📧</span><a href="#">Mensagens</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="stats-cards">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+        </section>
+        
+        <section class="recent-activities">
+            <h2>Atividades Recentes</h2>
+            <ul>
+                <li><span class="status-icon green">✔️</span> Tarefa concluída</li>
+                <li><span class="status-icon red">❌</span> Erro no sistema</li>
+                <li><span class="status-icon yellow">⚠️</span> Atenção necessária</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+        </ul>
+        <p>&copy; 2024 Dashboard</p>
+    </footer>
 </body>
 </html>
